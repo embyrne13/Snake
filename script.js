@@ -4,7 +4,7 @@ const userInput = document.getElementById('user-input')
 const newGame = document.getElementById('new-game')
 const newButton = document.getElementById('ngb')
 const results = document.getElementById('results')
-
+const canvas = document.getElementById('canvas')
 let options = {
   Animals: [
     'monkey',

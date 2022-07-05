@@ -4,7 +4,7 @@
 
 ### By: Emily Byrne
 
-#### [LinkedIn](https://www.linkedin.com/in/emily-byrne-189323179/) | [GitHub](https://github.com/embyrne13)
+#### [LinkedIn](https://www.linkedin.com/in/emilybyrne3/) | [GitHub](https://github.com/embyrne13)
 
 ---
 
@@ -34,7 +34,10 @@ The name of the game is Tornado. Tornado is a word game where you have 5 chances
 
 ### **_Screenshots_**
 
-![Image](https://www.amnh.org/var/ezflow_site/storage/images/media/tornado-leading-image/1666587-1-eng-US/tornado-leading-image.jpg)
+# <<<<<<< HEAD
+
+> > > > > > > 04bf8d5e780f29cbb9b07f670e56e1653d3e9aae
+> > > > > > > ![Image](https://www.amnh.org/var/ezflow_site/storage/images/media/tornado-leading-image/1666587-1-eng-US/tornado-leading-image.jpg)
 
 ---
 
@@ -44,10 +47,10 @@ The name of the game is Tornado. Tornado is a word game where you have 5 chances
 - Set house to lose line with each wrong guess
 - Set to 5 guesses
 - Have letters fade out when guessed
-- [x] Create dotted lines for the letters to go into
+- Create dotted lines for the letters to go into
 - [x] Create list of words
 - Style with CSS
-- [x] Setup win screen
+- Setup win screen
 - [x] New game button
 
 ---
