@@ -22,7 +22,7 @@
 - GitHub
 - VSCode
   -Google Fonts
-- Trello https://trello.com/b/WNqtNdz6/project-1
+- [Trello] (https://trello.com/b/WNqtNdz6/project-1)
 
 ---
 
