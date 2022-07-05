@@ -21,7 +21,7 @@
 - Javascript
 - GitHub
 - VSCode
-  -Google Fonts
+- Google Fonts
 - [Trello](https://trello.com/b/WNqtNdz6/project-1)
 
 ---
@@ -55,4 +55,5 @@ The name of the game is Tornado. Tornado is a word game where you have 5 chances
 
 ### **_Credits_**
 
----
+--- [Background Image](https://www.amnh.org/var/ezflow_site/storage/images/media/tornado-leading-image/1666587-1-eng-US/tornado-leading-image.jpg)
+
