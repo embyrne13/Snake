@@ -46,10 +46,10 @@ The name of the game is Tornado. Tornado is a word game where you have 5 chances
 - Set to 5 guesses
 - Have letters fade out when guessed
 - Create dotted lines for the letters to go into
-- Create list of words
+- [x] Create list of words
 - Style with CSS
 - Setup win screen
-- New game button
+- [x] New game button
 
 ---
 
