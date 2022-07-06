@@ -1,10 +1,8 @@
 const letters = document.getElementById('letters')
 const opt = document.getElementById('options')
 const userInput = document.getElementById('user-input')
-const newGame = document.getElementById('new-game')
 const newButton = document.getElementById('ngb')
 const results = document.getElementById('results')
-const canvas = document.getElementById('canvas')
 let options = {
   Animals: [
     'monkey',
@@ -45,15 +43,10 @@ const displayOpt = () => {
   opt.appendChild(buttonE)
 }
 const block = () => {
-  let optButton = document.querySelectorAll('.options')
-  let letBut = document.querySelectorAll('.letters')
-  optButton.forEach((button) => {
-    button.disabled = true
-  })
-  letBut.forEach((button) => {
-    button.disabled.true
-  })
-  newGame.classList.remove('hide')
+  letters.classList.add('hide')
+  opt.classList.add('hide')
+  userInput.classList.add('hide')
+  newButton.classList.remove('hide')
 }
 const getWord = (optionValue) => {
   let optButton = document.querySelectorAll('.opts')
@@ -61,7 +54,7 @@ const getWord = (optionValue) => {
     if (button.innerText.toLowerCase() === optionValue) {
       button.classList.add('active')
     }
-    button.disabled = true
+    button.disabled === true
   })
   letters.classList.remove('hide')
   userInput.innerText = ''
@@ -72,7 +65,6 @@ const getWord = (optionValue) => {
 
   let display = chosenWord.replace(/./g, '<span class="dashes">_</span>')
   userInput.innerHTML = display
-  letters.append('button')
 }
 const init = () => {
   winCount = 0
@@ -80,7 +72,7 @@ const init = () => {
   userInput.innerHTML = ''
   opt.innerHTML = ''
   letters.classList.add('hide')
-  newGame.classList.add('hide')
+  newButton.classList.add('hide')
   letters.innerHTML = ''
   for (let i = 65; i < 91; i++) {
     let button = document.createElement('button')
@@ -95,16 +87,15 @@ const init = () => {
             dashes[index].innerText = char
             winCount += 1
             if (winCount == cArray.length) {
-              results.innerHTML = `<h3 class='message'>You win!!!</h3><p>The word was <span>${chosenWord}</span></p>`
+              results.innerHTML = `<h3 class='message'>You win!!!</h3><p>The word was ${chosenWord}</p>`
               block()
             }
           }
         })
       } else {
         count += 1
-        // byeHouse(count)
-        if (count == 5) {
-          results.innerHTML = `<h3 class='lmessage'>You Lose :(</h3><p>The word was <span>${chosenWord}</span></p>`
+        if (count === 5) {
+          results.innerHTML = `<h3 class='lmessage'>You Lose :(</h3><p>The word was ${chosenWord}</p>`
           console.log(count)
           block()
         }
@@ -114,6 +105,6 @@ const init = () => {
     letters.append(button)
   }
   displayOpt()
-  newButton.addEventListener('click', init)
 }
+newButton.addEventListener('click', init)
 window.onload = init
