@@ -34,10 +34,7 @@ The name of the game is Tornado. Tornado is a word game where you have 5 chances
 
 ### **_Screenshots_**
 
-# <<<<<<< HEAD
-
-> > > > > > > 04bf8d5e780f29cbb9b07f670e56e1653d3e9aae
-> > > > > > > ![Image](https://www.amnh.org/var/ezflow_site/storage/images/media/tornado-leading-image/1666587-1-eng-US/tornado-leading-image.jpg)
+![Image](https://www.amnh.org/var/ezflow_site/storage/images/media/tornado-leading-image/1666587-1-eng-US/tornado-leading-image.jpg)
 
 ---
 
@@ -45,12 +42,12 @@ The name of the game is Tornado. Tornado is a word game where you have 5 chances
 
 - Create house
 - Set house to lose line with each wrong guess
-- Set to 5 guesses
+- [x] Set to 5 guesses
 - Have letters fade out when guessed
-- Create dotted lines for the letters to go into
+- [x] Create dotted lines for the letters to go into
 - [x] Create list of words
 - Style with CSS
-- Setup win screen
+- [x] Setup win screen
 - [x] New game button
 
 ---

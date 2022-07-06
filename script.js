@@ -66,7 +66,8 @@ const getWord = (optionValue) => {
   let display = chosenWord.replace(/./g, '<span class="dashes">_</span>')
   userInput.innerHTML = display
 }
-const init = () => {
+
+const startNew = () => {
   winCount = 0
   count = 0
   userInput.innerHTML = ''
@@ -106,5 +107,5 @@ const init = () => {
   }
   displayOpt()
 }
-newButton.addEventListener('click', init)
-window.onload = init
+newButton.addEventListener('click', startNew)
+window.onload = startNew
