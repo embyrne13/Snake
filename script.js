@@ -3,6 +3,7 @@ const opt = document.getElementById('options')
 const userInput = document.getElementById('user-input')
 const newButton = document.getElementById('ngb')
 const results = document.getElementById('results')
+const house = document.getElementById('house')
 let options = {
   Animals: [
     'monkey',
@@ -35,6 +36,7 @@ let count = 0
 let chosenWord = ''
 
 const displayOpt = () => {
+  opt.classList.remove('hide')
   opt.innerHTML += `<h2>Pick a Category</h2>`
   let buttonE = document.createElement('div')
   for (let value in options) {
@@ -44,6 +46,7 @@ const displayOpt = () => {
 }
 const block = () => {
   letters.classList.add('hide')
+  results.classList.remove('hide')
   opt.classList.add('hide')
   userInput.classList.add('hide')
   newButton.classList.remove('hide')
@@ -72,8 +75,9 @@ const startNew = () => {
   count = 0
   userInput.innerHTML = ''
   opt.innerHTML = ''
-  letters.classList.add('hide')
+  results.classList.add('hide')
   newButton.classList.add('hide')
+  letters.classList.add('hide')
   letters.innerHTML = ''
   for (let i = 65; i < 91; i++) {
     let button = document.createElement('button')
@@ -95,6 +99,25 @@ const startNew = () => {
         })
       } else {
         count += 1
+        // switch ((count += 1)) {
+        //   case 1:
+        //     line1.classList.add('hide')
+        //     break
+        //   case 2:
+        //     line2.classList.add('hide')
+        //     break
+        //   case 3:
+        //     line3.classList.add('hide')
+        //     break
+        //   case 4:
+        //     line2.classList.add('hide')
+        //     break
+        //   default:
+        //     line1.classList.remove('hide')
+        //     line2.classList.remove('hide')
+        //     line3.classList.remove('hide')
+        //     line4.classList.remove('hide')
+        // }
         if (count === 5) {
           results.innerHTML = `<h3 class='lmessage'>You Lose :(</h3><p>The word was ${chosenWord}</p>`
           console.log(count)

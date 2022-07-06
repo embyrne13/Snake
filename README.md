@@ -40,10 +40,10 @@ The name of the game is Tornado. Tornado is a word game where you have 5 chances
 
 ### **_Future Updates_**
 
-- Create house
+- [x] Create house
 - Set house to lose line with each wrong guess
 - [x] Set to 5 guesses
-- Have letters fade out when guessed
+- [x] Have letters fade out when guessed
 - [x] Create dotted lines for the letters to go into
 - [x] Create list of words
 - Style with CSS
