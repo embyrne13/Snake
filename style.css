@@ -1,8 +1,12 @@
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
 body {
   background-image: url('https://www.amnh.org/var/ezflow_site/storage/images/media/tornado-leading-image/1666587-1-eng-US/tornado-leading-image.jpg');
   padding: 0;
   margin: 0;
-  font-family: 'Varela', sans-serif;
+  font-family: 'Indie Flower', cursive;
   display: flex;
   justify-content: space-around;
 }
@@ -27,15 +31,8 @@ body {
   color: dimgray;
   padding: 1em;
   margin-bottom: 33px;
-  font-size: 20px;
-}
-#options button.disabled {
-  background-color: white;
-}
-#options button.active {
-  background-color: navy;
-  border: 3px solid navy;
-  color: dimgray;
+  font-size: 27px;
+  font-family: 'Indie Flower', cursive;
 }
 #ngb {
   color: dimgray;
@@ -47,21 +44,23 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.3em;
-  font-size: 14px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
 }
 h2 {
   color: white;
-  font-size: 55px;
+  font-size: 66px;
   text-align: center;
 }
 h3 {
   color: white;
-  font-size: 55px;
+  font-size: 66px;
   text-align: center;
 }
 p {
   color: white;
-  font-size: 33px;
+  font-size: 44px;
   text-align: center;
 }
 #letters button {
@@ -73,7 +72,7 @@ p {
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 2em;
+  font-size: 3em;
   gap: 0.5em;
   margin-bottom: 10px;
 }
@@ -81,8 +80,11 @@ p {
   display: none;
 }
 #ngb {
-  width: 100%;
+  width: 50%;
   height: 50px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 22px;
 }
 #full-house {
   height: 100vh;
@@ -99,33 +101,38 @@ p {
 #roof {
   display: flex;
   justify-content: center;
-  margin-bottom: -30px;
+  margin-bottom: -50px;
 }
 .line-1 {
   border-left: 3px solid white;
   transform: rotate(45deg);
   transform-origin: top center;
-  height: 97px;
+  height: 145px;
   width: 0px;
+  animation-direction: alternate;
 }
 .line-2 {
   border-left: 3px solid white;
   transform: rotate(315deg);
   transform-origin: top center;
-  height: 96px;
+  height: 145px;
   width: 0px;
+  animation-direction: alternate;
 }
 .line-3 {
   border-left: 3px solid white;
-  height: 133px;
+  height: 200px;
   width: 0px;
+  animation-direction: alternate;
 }
 .line-4 {
   border-bottom: 3px solid white;
-  width: 137px;
+  width: 200px;
+  animation-direction: alternate;
 }
 .line-5 {
   border-right: 3px solid white;
-  height: 133px;
+  height: 200px;
   width: 0px;
+  animation-direction: alternate;
 }
