@@ -28,6 +28,23 @@ let options = {
     'alpaca',
     'rabbit'
   ],
+  Countries: [
+    'Italy',
+    'Nepal',
+    'Canada',
+    'Argentina',
+    'Tanzania',
+    'Japan',
+    'Ireland',
+    'Kenya',
+    'Malaysia',
+    'Egypt',
+    'Spain',
+    'Chile',
+    'Switzerland',
+    'Mozambique',
+    'Rwanda'
+  ],
   Food: [
     'spaghetti',
     'quiche',
@@ -102,6 +119,11 @@ const startNew = () => {
   line3.classList.remove('hide')
   line4.classList.remove('hide')
   line5.classList.remove('hide')
+  document.querySelector('.line-1').classList.remove('ani')
+  document.querySelector('.line-2').classList.remove('ani')
+  document.querySelector('.line-3').classList.remove('ani')
+  document.querySelector('.line-4').classList.remove('ani')
+  document.querySelector('.line-5').classList.remove('ani')
   results.classList.add('hide')
   newButton.classList.add('hide')
   letters.classList.add('hide')
@@ -165,11 +187,6 @@ const startNew = () => {
             line3.classList.remove('hide')
             line4.classList.remove('hide')
             line5.classList.remove('hide')
-          // document.querySelector('.line-1').classList.hide('ani')
-          // document.querySelector('.line-2').classList.hide('ani')
-          // document.querySelector('.line-3').classList.hide('ani')
-          // document.querySelector('.line-4').classList.hide('ani')
-          // document.querySelector('.line-5').classList.hide('ani')
         }
         if (count === 5) {
           results.innerHTML = `<h5 class='lmessage'>You Lose : (</5><p>The word was ${chosenWord}</p>`
