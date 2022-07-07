@@ -80,6 +80,7 @@ const getWord = (optionValue) => {
     }
     button.disabled = true
   })
+  opt.innerHTML += `<h2>Pick a Letter</h2>`
   letters.classList.remove('hide')
   userInput.innerText = ''
   let optArray = options[optionValue]
@@ -129,20 +130,34 @@ const startNew = () => {
         button.disabled = true
         switch (count) {
           case 1:
-            line1.style.animate
-            line1.classList.add('hide')
+            document.querySelector('.line-1').classList.add('ani')
+            setTimeout(() => {
+              line1.classList.add('hide')
+            }, 1000)
             break
           case 2:
-            line2.style.animate
-            line2.classList.add('hide')
+            document.querySelector('.line-2').classList.add('ani')
+            setTimeout(() => {
+              line2.classList.add('hide')
+            }, 1000)
             break
           case 3:
-            line3.style.animate
-            line3.classList.add('hide')
+            document.querySelector('.line-3').classList.add('ani')
+            setTimeout(() => {
+              line3.classList.add('hide')
+            }, 1000)
             break
           case 4:
-            line4.style.animate
-            line4.classList.add('hide')
+            document.querySelector('.line-4').classList.add('ani')
+            setTimeout(() => {
+              line4.classList.add('hide')
+            }, 1000)
+            break
+          case 5:
+            document.querySelector('.line-5').classList.add('ani')
+            setTimeout(() => {
+              line5.classList.add('hide')
+            }, 1000)
             break
           default:
             line1.classList.remove('hide')

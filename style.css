@@ -6,9 +6,11 @@
   0% {
     transform: translateX();
   }
-  /* 50% {} */
+  50% {
+    transform: translateX(-300px) translateY(100px);
+  }
   100% {
-    transform: translateX(300px);
+    transform: translateX(500px) translateY(300px);
   }
 }
 body {
@@ -121,9 +123,12 @@ p {
   transform-origin: top center;
   height: 144px;
   width: 0px;
-  position: relative;
+}
+.ani {
+  animation-name: move;
   animation-direction: alternate;
-  animation-duration: 5s;
+  animation-duration: 0.5s;
+  animation-iteration-count: 2;
 }
 .line-2 {
   border-left: 10px solid white;
@@ -131,30 +136,18 @@ p {
   transform-origin: top center;
   height: 144px;
   width: 0px;
-  position: relative;
-  animation-direction: alternate;
-  animation-duration: 5s;
 }
 .line-3 {
   border-left: 10px solid white;
   height: 200px;
   width: 0px;
-  position: relative;
-  animation-direction: alternate;
-  animation-duration: 5s;
 }
 .line-4 {
   border-bottom: 10px solid white;
   width: 200px;
-  position: relative;
-  animation-direction: alternate;
-  animation-duration: 5s;
 }
 .line-5 {
   border-right: 10px solid white;
   height: 200px;
   width: 0px;
-  position: relative;
-  animation-direction: alternate;
-  animation-duration: 5s;
 }
