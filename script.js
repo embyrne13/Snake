@@ -9,6 +9,7 @@ const line2 = document.querySelector('.line-2')
 const line3 = document.querySelector('.line-3')
 const line4 = document.querySelector('.line-4')
 const line5 = document.querySelector('.line-5')
+const line6 = document.querySelector('.line-6')
 let options = {
   Animals: [
     'monkey',
@@ -128,15 +129,19 @@ const startNew = () => {
         button.disabled = true
         switch (count) {
           case 1:
+            line1.style.animate
             line1.classList.add('hide')
             break
           case 2:
+            line2.style.animate
             line2.classList.add('hide')
             break
           case 3:
+            line3.style.animate
             line3.classList.add('hide')
             break
           case 4:
+            line4.style.animate
             line4.classList.add('hide')
             break
           default:

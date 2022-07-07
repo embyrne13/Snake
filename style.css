@@ -2,6 +2,15 @@
   width: device-width;
   zoom: 1;
 }
+@keyframes move {
+  0% {
+    transform: translateX();
+  }
+  /* 50% {} */
+  100% {
+    transform: translateX(300px);
+  }
+}
 body {
   background-image: url('https://www.amnh.org/var/ezflow_site/storage/images/media/tornado-leading-image/1666587-1-eng-US/tornado-leading-image.jpg');
   padding: 0;
@@ -57,6 +66,9 @@ h3 {
   color: white;
   font-size: 66px;
   text-align: center;
+  position: relative;
+  animation-direction: alternate;
+  animation-duration: 5s;
 }
 p {
   color: white;
@@ -104,35 +116,45 @@ p {
   margin-bottom: -50px;
 }
 .line-1 {
-  border-left: 3px solid white;
+  border-left: 10px solid white;
   transform: rotate(45deg);
   transform-origin: top center;
-  height: 145px;
+  height: 144px;
   width: 0px;
+  position: relative;
   animation-direction: alternate;
+  animation-duration: 5s;
 }
 .line-2 {
-  border-left: 3px solid white;
+  border-left: 10px solid white;
   transform: rotate(315deg);
   transform-origin: top center;
-  height: 145px;
+  height: 144px;
   width: 0px;
+  position: relative;
   animation-direction: alternate;
+  animation-duration: 5s;
 }
 .line-3 {
-  border-left: 3px solid white;
+  border-left: 10px solid white;
   height: 200px;
   width: 0px;
+  position: relative;
   animation-direction: alternate;
+  animation-duration: 5s;
 }
 .line-4 {
-  border-bottom: 3px solid white;
+  border-bottom: 10px solid white;
   width: 200px;
+  position: relative;
   animation-direction: alternate;
+  animation-duration: 5s;
 }
 .line-5 {
-  border-right: 3px solid white;
+  border-right: 10px solid white;
   height: 200px;
   width: 0px;
+  position: relative;
   animation-direction: alternate;
+  animation-duration: 5s;
 }
