@@ -30,7 +30,7 @@
 
 ---
 
-The name of the game is Tornado. Tornado is a word game where you have 5 chances to guess the word. Each time you guess a wrong letter, you lose a part of your house. If you don't get the word in time, a tornado will known your house down. Good luck!
+The name of the game is Tornado. Tornado is a word game where you have 5 chances to guess the word. Each time you guess a wrong letter, you lose a part of your house. If you don't get the word in time, a tornado will knock your house down. Good luck!
 
 ### **_Screenshots_**
 
