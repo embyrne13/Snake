@@ -9,7 +9,6 @@ const line2 = document.querySelector('.line-2')
 const line3 = document.querySelector('.line-3')
 const line4 = document.querySelector('.line-4')
 const line5 = document.querySelector('.line-5')
-const line6 = document.querySelector('.line-6')
 let options = {
   Animals: [
     'monkey',
@@ -87,7 +86,6 @@ const block = () => {
   line2.classList.add('hide')
   line3.classList.add('hide')
   line4.classList.add('hide')
-  line5.classList.add('hide')
 }
 const getWord = (optionValue) => {
   let optButton = document.querySelectorAll('.opts')
@@ -175,11 +173,6 @@ const startNew = () => {
               line4.classList.add('hide')
             }, 1000)
             break
-          case 5:
-            document.querySelector('.line-5').classList.add('ani')
-            setTimeout(() => {
-              line5.classList.add('hide')
-            }, 1000)
             break
           default:
             line1.classList.remove('hide')
@@ -189,6 +182,7 @@ const startNew = () => {
             line5.classList.remove('hide')
         }
         if (count === 5) {
+          line5.classList.add('hide')
           results.innerHTML = `<h5 class='lmessage'>You Lose : (</5><p>The word was ${chosenWord}</p>`
           block()
         }
