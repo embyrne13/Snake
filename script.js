@@ -80,7 +80,7 @@ const getWord = (optionValue) => {
     }
     button.disabled = true
   })
-  opt.innerHTML += `<h2>Pick a Letter</h2>`
+  opt.innerHTML += `<h8> <h2>Pick a Letter</h2> <h6>${optionValue}</h6> </h8>`
   letters.classList.remove('hide')
   userInput.innerText = ''
   let optArray = options[optionValue]
@@ -164,10 +164,15 @@ const startNew = () => {
             line2.classList.remove('hide')
             line3.classList.remove('hide')
             line4.classList.remove('hide')
-            console.log('default')
+            line5.classList.remove('hide')
+          // document.querySelector('.line-1').classList.hide('ani')
+          // document.querySelector('.line-2').classList.hide('ani')
+          // document.querySelector('.line-3').classList.hide('ani')
+          // document.querySelector('.line-4').classList.hide('ani')
+          // document.querySelector('.line-5').classList.hide('ani')
         }
         if (count === 5) {
-          results.innerHTML = `<h3 class='lmessage'>You Lose : (</h3><p>The word was ${chosenWord}</p>`
+          results.innerHTML = `<h5 class='lmessage'>You Lose : (</5><p>The word was ${chosenWord}</p>`
           block()
         }
       }

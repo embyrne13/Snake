@@ -13,6 +13,11 @@
     transform: translateX(500px) translateY(300px);
   }
 }
+@keyframes wooo {
+  100% {
+    transform: scale(3);
+  }
+}
 body {
   background-image: url('https://www.amnh.org/var/ezflow_site/storage/images/media/tornado-leading-image/1666587-1-eng-US/tornado-leading-image.jpg');
   padding: 0;
@@ -25,7 +30,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 50vw;
-  height: 80vh;
+  padding: 10px;
+  height: 62vh;
   align-items: center;
   justify-content: center;
 }
@@ -43,7 +49,11 @@ body {
   padding: 1em;
   margin-bottom: 33px;
   font-size: 27px;
+  font-weight: bold;
   font-family: 'Indie Flower', cursive;
+}
+#options button.active {
+  background-color: green;
 }
 #ngb {
   color: dimgray;
@@ -55,7 +65,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.3em;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: bold;
   font-family: 'Indie Flower', cursive;
 }
@@ -63,14 +73,33 @@ h2 {
   color: white;
   font-size: 66px;
   text-align: center;
+  margin: 10px;
+  padding: 0;
 }
 h3 {
   color: white;
   font-size: 66px;
   text-align: center;
-  position: relative;
-  animation-direction: alternate;
-  animation-duration: 5s;
+  animation-name: wooo;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+h5 {
+  color: white;
+  font-size: 77px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+h6 {
+  display: inline;
+  color: white;
+  text-decoration: underline;
+  font-size: 44px;
+  width: 10vw;
+  text-align: center;
+  margin: 50px;
+  padding: 0;
 }
 p {
   color: white;
@@ -86,7 +115,7 @@ p {
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 3em;
+  font-size: 4em;
   gap: 0.5em;
   margin-bottom: 10px;
 }
@@ -117,18 +146,18 @@ p {
   justify-content: center;
   margin-bottom: -50px;
 }
+.ani {
+  animation-name: move;
+  animation-direction: alternate;
+  animation-duration: 0.7s;
+  animation-iteration-count: 2;
+}
 .line-1 {
   border-left: 10px solid white;
   transform: rotate(45deg);
   transform-origin: top center;
   height: 144px;
   width: 0px;
-}
-.ani {
-  animation-name: move;
-  animation-direction: alternate;
-  animation-duration: 0.5s;
-  animation-iteration-count: 2;
 }
 .line-2 {
   border-left: 10px solid white;
