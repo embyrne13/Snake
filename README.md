@@ -35,7 +35,7 @@ The name of the game is Tornado. Tornado is a word game where you have 5 chances
 ### **_Screenshots_**
 
 ![](PickaCategory.jpg)
-![](PickALetter.jpg)
+![](PickLetter.jpg)
 ![](YouWin.jpg)
 
 ---
