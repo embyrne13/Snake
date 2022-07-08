@@ -9,6 +9,7 @@ const line2 = document.querySelector('.line-2')
 const line3 = document.querySelector('.line-3')
 const line4 = document.querySelector('.line-4')
 const line5 = document.querySelector('.line-5')
+const gif = document.getElementById('gif')
 let options = {
   Animals: [
     'monkey',
@@ -68,13 +69,25 @@ let count = 0
 let chosenWord = ''
 
 const displayOpt = () => {
+  line1.classList.add('hide')
+  line2.classList.add('hide')
+  line3.classList.add('hide')
+  line4.classList.add('hide')
+  line5.classList.add('hide')
+  document.querySelector('.line-1').classList.remove('ani')
+  document.querySelector('.line-2').classList.remove('ani')
+  document.querySelector('.line-3').classList.remove('ani')
+  document.querySelector('.line-4').classList.remove('ani')
+  document.querySelector('.line-5').classList.remove('ani')
   opt.classList.remove('hide')
   opt.innerHTML += `<h2>Pick a Category</h2>`
+  gif.classList.remove('hide')
   let buttonE = document.createElement('div')
   for (let value in options) {
     buttonE.innerHTML += `<button class="opts" onclick="getWord('${value}')">${value}</button>`
   }
   opt.appendChild(buttonE)
+  gif
 }
 const block = () => {
   letters.classList.add('hide')
@@ -86,8 +99,15 @@ const block = () => {
   line2.classList.add('hide')
   line3.classList.add('hide')
   line4.classList.add('hide')
+  line5.classList.add('hide')
 }
 const getWord = (optionValue) => {
+  gif.classList.add('hide')
+  line1.classList.remove('hide')
+  line2.classList.remove('hide')
+  line3.classList.remove('hide')
+  line4.classList.remove('hide')
+  line5.classList.remove('hide')
   let optButton = document.querySelectorAll('.opts')
   optButton.forEach((button) => {
     if (button.innerText.toLowerCase() === optionValue) {
@@ -112,16 +132,6 @@ const startNew = () => {
   count = 0
   userInput.innerHTML = ''
   opt.innerHTML = ''
-  line1.classList.remove('hide')
-  line2.classList.remove('hide')
-  line3.classList.remove('hide')
-  line4.classList.remove('hide')
-  line5.classList.remove('hide')
-  document.querySelector('.line-1').classList.remove('ani')
-  document.querySelector('.line-2').classList.remove('ani')
-  document.querySelector('.line-3').classList.remove('ani')
-  document.querySelector('.line-4').classList.remove('ani')
-  document.querySelector('.line-5').classList.remove('ani')
   results.classList.add('hide')
   newButton.classList.add('hide')
   letters.classList.add('hide')
@@ -151,6 +161,7 @@ const startNew = () => {
         switch (count) {
           case 1:
             document.querySelector('.line-1').classList.add('ani')
+            console.log('ani')
             setTimeout(() => {
               line1.classList.add('hide')
             }, 1000)
@@ -173,13 +184,7 @@ const startNew = () => {
               line4.classList.add('hide')
             }, 1000)
             break
-            break
           default:
-            line1.classList.remove('hide')
-            line2.classList.remove('hide')
-            line3.classList.remove('hide')
-            line4.classList.remove('hide')
-            line5.classList.remove('hide')
         }
         if (count === 5) {
           line5.classList.add('hide')

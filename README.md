@@ -56,10 +56,12 @@ The name of the game is Tornado. Tornado is a word game where you have 5 chances
 
 ### **_Credits_**
 
+- [Starting Page Gif](https://media.giphy.com/media/d3mlXPjoK1ROfr9u/giphy-downsized-large.gif)
 - [Background Image](https://www.amnh.org/var/ezflow_site/storage/images/media/tornado-leading-image/1666587-1-eng-US/tornado-leading-image.jpg)
 - [Char](http://www.mathcs.emory.edu/~cheung/Courses/170/Syllabus/05/char1.html)
 - [Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
 - [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+- [Gif](https://giphy.com/embed/iGjYHsBHD9E3pQxCAQ)
 - John Jacobs
 - Michael Lackey
 

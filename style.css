@@ -47,10 +47,12 @@ body {
 #options button {
   color: dimgray;
   padding: 1em;
+  margin-top: 10px;
   margin-bottom: 33px;
   font-size: 27px;
   font-weight: bold;
   font-family: 'Indie Flower', cursive;
+  cursor: grab;
 }
 #options button.active {
   background-color: green;
@@ -73,7 +75,7 @@ h2 {
   color: white;
   font-size: 66px;
   text-align: center;
-  margin: 10px;
+  margin: 15px;
   padding: 0;
 }
 h3 {
@@ -107,6 +109,7 @@ p {
   text-align: center;
 }
 #letters button {
+  cursor: grab;
   height: 2.2em;
   width: 2.2em;
   margin: 1.1em;
@@ -128,6 +131,7 @@ p {
   font-family: 'Indie Flower', cursive;
   font-weight: bold;
   font-size: 22px;
+  cursor: grab;
 }
 #full-house {
   height: 100vh;
@@ -149,34 +153,44 @@ p {
 .ani {
   animation-name: move;
   animation-direction: alternate;
-  animation-duration: 0.7s;
-  animation-iteration-count: 2;
+  animation-duration: 0.2s;
+  animation-iteration-count: 3;
 }
 .line-1 {
-  border-left: 10px solid white;
-  transform: rotate(45deg);
+  border: 10px solid rgb(129, 26, 3);
+  transform: rotate(40deg);
   transform-origin: top center;
-  height: 144px;
+  padding: 0;
+  height: 146px;
   width: 0px;
 }
 .line-2 {
-  border-left: 10px solid white;
-  transform: rotate(315deg);
+  border: 10px solid rgb(129, 26, 3);
+  transform: rotate(320deg);
   transform-origin: top center;
-  height: 144px;
+  padding: 0;
+  height: 146px;
   width: 0px;
 }
 .line-3 {
-  border-left: 10px solid white;
+  border: 10px solid rgb(129, 26, 3);
+  border-style: dashed;
   height: 200px;
   width: 0px;
 }
 .line-4 {
-  border-bottom: 10px solid white;
+  border-bottom: 10px solid rgb(129, 26, 3);
   width: 200px;
 }
 .line-5 {
-  border-right: 10px solid white;
+  border: 10px solid rgb(129, 26, 3);
+  border-style: dashed;
   height: 200px;
   width: 0px;
+}
+#gif {
+  width: 50vw;
+  margin-right: -900px;
+  margin-top: 200px;
+  height: 100vh;
 }
