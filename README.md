@@ -10,7 +10,7 @@
 
 ### **_Description_**
 
-#### A rendition of Hangman but instead a tornado is coming and the player must try to save their house by guessing the right word
+#### This is a game I made in less than a week for General Assembly. A rendition of Hangman but instead a tornado is coming and the player must try to save their house by guessing the right word.
 
 ---
 
@@ -26,7 +26,7 @@
 
 ---
 
-### **_Getting Started_**
+### **_Overview_**
 
 ---
 
