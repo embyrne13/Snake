@@ -90,6 +90,7 @@ const displayOpt = () => {
   gif
 }
 const block = () => {
+  gif.classList.remove('hide')
   letters.classList.add('hide')
   results.classList.remove('hide')
   opt.classList.add('hide')
@@ -161,34 +162,34 @@ const startNew = () => {
         switch (count) {
           case 1:
             document.querySelector('.line-1').classList.add('ani')
-            console.log('ani')
             setTimeout(() => {
               line1.classList.add('hide')
-            }, 1000)
+            }, 500)
             break
           case 2:
             document.querySelector('.line-2').classList.add('ani')
             setTimeout(() => {
               line2.classList.add('hide')
-            }, 1000)
+            }, 500)
             break
           case 3:
             document.querySelector('.line-3').classList.add('ani')
             setTimeout(() => {
               line3.classList.add('hide')
-            }, 1000)
+            }, 500)
             break
           case 4:
             document.querySelector('.line-4').classList.add('ani')
             setTimeout(() => {
               line4.classList.add('hide')
-            }, 1000)
+            }, 500)
             break
           default:
         }
         if (count === 5) {
           line5.classList.add('hide')
           results.innerHTML = `<h5 class='lmessage'>You Lose : (</5><p>The word was ${chosenWord}</p>`
+          gif.classList.remove('hide')
           block()
         }
       }
